@@ -14,11 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIButton *create;
 
+@property (strong, nonatomic) NSMutableArray *users;
+
 @property (weak, nonatomic) IBOutlet UITextField *newname;
 
 @property (weak, nonatomic) IBOutlet UITextField *newpassword;
 
 @property (weak, nonatomic) IBOutlet UITextField *newemail;
+
+@property (weak, nonatomic) IBOutlet UITextField *newphone;
 
 @property (weak, nonatomic) IBOutlet UILabel *errornew;
 

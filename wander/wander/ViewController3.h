@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIButton *submitBut;
 
+@property (weak, nonatomic) IBOutlet UITextField *currentL;
+
+@property (weak, nonatomic) IBOutlet UITextField *destinationL;
+
 
 @end
 

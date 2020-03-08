@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "ViewController2.h"
 #import "ViewController1.h"
+
 
 @interface ViewController ()
 
@@ -26,27 +28,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    self.users = [[NSMutableArray alloc] init];
+     self.users = [[NSMutableArray alloc] init];
      self.index = 0;
 
-     NSMutableArray *user0 = [NSMutableArray arrayWithObjects: @"richardL", @"abc", @"richard", @"45", @"9", @"10", @"0", @"richard.jpg", nil];
+     NSMutableArray *user0 = [NSMutableArray arrayWithObjects: @"Natalie P.", @"abc", @"np123@nyu.edu", @"4572357473", nil];
 
      [self.users addObject:user0];
 
 
-     NSMutableArray *user1 = [NSMutableArray arrayWithObjects: @"Prince Hamlet", @"Elsinore Castle, Denmark", @"100", @"0", @"10", @"10", @"10", @"younghamlet.jpg", nil];
+     NSMutableArray *user1 = [NSMutableArray arrayWithObjects: @"Jake M.", @"park234", @"jake345@usc.edu", @"4567895678", nil];
 
      [self.users addObject:user1];
 
-     NSMutableArray *user2 = [NSMutableArray arrayWithObjects: @"King Lear", @"Leicester Castle, England", @"100", @"22", @"10", @"6", @"0", @"lear.jpg", nil];
+     NSMutableArray *user2 = [NSMutableArray arrayWithObjects: @"Priya R.", @"marker86", @"pr456@nyu.edu", @"3453465678", nil];
 
      [self.users addObject:user2];
 
-     NSMutableArray *user3 = [NSMutableArray arrayWithObjects: @"King Henry VIII", @"Whitehall Palace, England", @"62", @"60", @"7", @"6", @"7", @"henry8.jpg", nil];
+     NSMutableArray *user3 = [NSMutableArray arrayWithObjects: @"Max Z.", @"cookie7564", @"myz869@nyu.edu", @"4567892345", nil];
 
      [self.users addObject:user3];
 
-     NSMutableArray *user4 = [NSMutableArray arrayWithObjects: @"Queen Elizabeth", @"Richmond Palace, England", @"90", @"100", @"9", @"10", @"10", @"elizabeth.jpg", nil];
+     NSMutableArray *user4 = [NSMutableArray arrayWithObjects: @"Liz C.", @"fish765", @"lc768@nyu.edu", @"1234456754", nil];
 
      [self.users addObject:user4];
 }
@@ -62,45 +64,48 @@
 
 
 
-    //NSMutableArray * user = [NSMutableArray arrayWithObjects: uemail, upassword, nil];
-
     if(self.email.text == nil || [self.email.text isEqualToString:@""] || self.password.text == nil || [self.password.text isEqualToString:@""]) {
         self.error.text = @"Error: Please Enter All Fields!";
     }
 
     else {
-        BOOL flag;
+        BOOL flag = FALSE;
         self.error.text = @"";
-        if((flag = TRUE)) {
+        //if((flag = TRUE)) {
         for(int i = 0; i < self.users.count-1; i++) {
             //for(int j = 0; j < self.cur.count-1; j++) {
-                if(self.users[i][2] == uemail && self.users[i][1] == upassword) {
+            NSLog(self.users[i][2]);
+            NSLog(self.users[i][1]);
+            NSLog(uemail);
+                  
+            if([self.users[i][2] isEqualToString:uemail] && [self.users[i][1] isEqualToString: upassword]) {
                     NSString *proname = self.users[i][0];
                     self.cur = [NSMutableArray arrayWithObjects: proname, uemail, upassword, nil];
+                    flag = TRUE;
                     [self performSegueWithIdentifier:@"afterLogin" sender:self];
                 }
-            }
+            //}
         }
-        else{
-            (flag = FALSE);
+        if (flag == FALSE){
+            //(flag = FALSE);
             self.error.text = @"Email & Password do not match!";
         }
-
+            
+       // }
     }
 
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    if ([segue.identifier isEqualToString:@"afterAcc"]) {
+//            ViewController2 *vc = segue.destinationViewController;
+//            vc.users = vc.users;
+//    }
     if ([segue.identifier isEqualToString:@"afterLogin"]) {
             ViewController1 *vcc = segue.destinationViewController;
             vcc.cur = self.cur;
-        } //else {
-           // ViewController3 * vc =  segue.destinationViewController;
-
-           // vc.students = self.students;
-       // }
-    }
-
+        }
+}
 
 
 @end

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		4564F54324134DA800751810 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4564F54224134DA800751810 /* main.m */; };
 		4564F54D24134DA800751810 /* wanderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4564F54C24134DA800751810 /* wanderTests.m */; };
 		4564F55824134DA800751810 /* wanderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4564F55724134DA800751810 /* wanderUITests.m */; };
+		4567EAC52415375800D6E377 /* 89538063_1254802244729798_1630011522728067072_n.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4567EAC42415375800D6E377 /* 89538063_1254802244729798_1630011522728067072_n.jpg */; };
+		4567EAC824153B4100D6E377 /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 4567EAC724153B4100D6E377 /* ViewController5.m */; };
 		4568EA3B24141F20000E456D /* noun_password_2630646.png in Resources */ = {isa = PBXBuildFile; fileRef = 4568EA3A24141F1F000E456D /* noun_password_2630646.png */; };
 		4568EA3D24142098000E456D /* noun_Email_1561845.png in Resources */ = {isa = PBXBuildFile; fileRef = 4568EA3C24142098000E456D /* noun_Email_1561845.png */; };
 		4568EA3F2414213F000E456D /* noun_Phone_1829870.png in Resources */ = {isa = PBXBuildFile; fileRef = 4568EA3E2414213F000E456D /* noun_Phone_1829870.png */; };
@@ -62,6 +64,9 @@
 		4564F55324134DA800751810 /* wanderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wanderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4564F55724134DA800751810 /* wanderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wanderUITests.m; sourceTree = "<group>"; };
 		4564F55924134DA800751810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4567EAC42415375800D6E377 /* 89538063_1254802244729798_1630011522728067072_n.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 89538063_1254802244729798_1630011522728067072_n.jpg; sourceTree = "<group>"; };
+		4567EAC624153B4100D6E377 /* ViewController5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController5.h; sourceTree = "<group>"; };
+		4567EAC724153B4100D6E377 /* ViewController5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController5.m; sourceTree = "<group>"; };
 		4568EA3A24141F1F000E456D /* noun_password_2630646.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noun_password_2630646.png; path = ../../../../Downloads/noun_password_2630646.png; sourceTree = "<group>"; };
 		4568EA3C24142098000E456D /* noun_Email_1561845.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_Email_1561845.png; sourceTree = "<group>"; };
 		4568EA3E2414213F000E456D /* noun_Phone_1829870.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_Phone_1829870.png; sourceTree = "<group>"; };
@@ -138,11 +143,14 @@
 				4568EA4624142B9A000E456D /* ViewController3.m */,
 				4568EA4E241440D3000E456D /* ViewController4.h */,
 				4568EA4F241440D3000E456D /* ViewController4.m */,
+				4567EAC624153B4100D6E377 /* ViewController5.h */,
+				4567EAC724153B4100D6E377 /* ViewController5.m */,
 				4564F53924134DA200751810 /* Main.storyboard */,
 				4564F53C24134DA800751810 /* Assets.xcassets */,
 				4564F53E24134DA800751810 /* LaunchScreen.storyboard */,
 				4564F54124134DA800751810 /* Info.plist */,
 				4564F54224134DA800751810 /* main.m */,
+				4567EAC42415375800D6E377 /* 89538063_1254802244729798_1630011522728067072_n.jpg */,
 				4568EA3A24141F1F000E456D /* noun_password_2630646.png */,
 				4568EA3C24142098000E456D /* noun_Email_1561845.png */,
 				4568EA3E2414213F000E456D /* noun_Phone_1829870.png */,
@@ -277,6 +285,7 @@
 				4564F54024134DA800751810 /* LaunchScreen.storyboard in Resources */,
 				4568EA3F2414213F000E456D /* noun_Phone_1829870.png in Resources */,
 				4564F53D24134DA800751810 /* Assets.xcassets in Resources */,
+				4567EAC52415375800D6E377 /* 89538063_1254802244729798_1630011522728067072_n.jpg in Resources */,
 				4564F53B24134DA200751810 /* Main.storyboard in Resources */,
 				4568EA412414217D000E456D /* noun_person_1993836.png in Resources */,
 			);
@@ -308,6 +317,7 @@
 				4564F53224134DA200751810 /* AppDelegate.m in Sources */,
 				4568EA4724142B9A000E456D /* ViewController3.m in Sources */,
 				4564F54324134DA800751810 /* main.m in Sources */,
+				4567EAC824153B4100D6E377 /* ViewController5.m in Sources */,
 				4564F53524134DA200751810 /* SceneDelegate.m in Sources */,
 				4568EA4A24143547000E456D /* ViewController2.m in Sources */,
 				4568EA50241440D3000E456D /* ViewController4.m in Sources */,

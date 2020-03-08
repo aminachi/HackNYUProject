@@ -14,14 +14,17 @@
 
 @implementation ViewController2
 
+
+- (IBAction)backMistakePressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
-- (IBAction)backMistakePressed:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
 
 
 - (IBAction)createPressed:(id)sender {
@@ -29,8 +32,9 @@
     NSString * nuname = self.newname.text;
     NSString * nupassword = self.newpassword.text;
     NSString * nuemail = self.newemail.text;
+    NSString * nuphone = self.newphone.text;
     
-   //NSMutableArray * user = [NSMutableArray arrayWithObjects: uemail, upassword, nil];
+   NSMutableArray * newuser = [NSMutableArray arrayWithObjects: nuname, nupassword, nuemail, nuphone, nil];
     
     if(self.newname.text == nil || [self.newname.text isEqualToString:@""] || self.newpassword.text == nil || [self.newpassword.text isEqualToString:@""] || self.newemail.text == nil || [self.newemail.text isEqualToString:@""]) {
         self.errornew.text = @"Error: Please Enter All Fields!";
@@ -38,6 +42,7 @@
     
     else {
       self.errornew.text = @"";
+    [self.users addObject:newuser];
     [self performSegueWithIdentifier:@"afterAcc" sender:self];
    }
     
