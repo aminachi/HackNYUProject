@@ -14,6 +14,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIButton *backToGo;
 
+@property (weak, nonatomic) IBOutlet UILabel *name1;
+
+@property (weak, nonatomic) IBOutlet UILabel *name2;
+
+@property (weak, nonatomic) IBOutlet UILabel *name3;
+
+@property (weak, nonatomic) IBOutlet UILabel *name4;
+
+@property (weak, nonatomic) IBOutlet UIButton *requestBut;
+
 @end
 
 NS_ASSUME_NONNULL_END
