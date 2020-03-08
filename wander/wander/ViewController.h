@@ -10,6 +10,16 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *signUp;
+
+@property (weak, nonatomic) IBOutlet UIButton *login;
+
+@property (weak, nonatomic) IBOutlet UITextField *email;
+
+@property (weak, nonatomic) IBOutlet UITextField *password;
+
+@property (weak, nonatomic) IBOutlet UILabel *error;
+
 
 @end
 
